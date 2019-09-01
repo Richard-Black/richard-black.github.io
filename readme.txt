@@ -1,2 +1,2 @@
-csc 242 website
-8:00pm
+richard-black.github.io
+CSCE 242 class website
