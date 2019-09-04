@@ -1,0 +1,17 @@
+﻿body {
+    background:skyblue;
+    color:red;
+    font-family:Arial, Helvetica, sans-serif; //Put font you want first
+}
+h1{
+    color:green;
+}
+h2{
+    color:purple;
+}
+h3{
+    color:purple;
+}
+p {
+    color: yellow;
+}
