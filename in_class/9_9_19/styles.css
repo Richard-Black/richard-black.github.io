@@ -1,15 +1,14 @@
 ﻿body {
-    background:pink;
-
+    background: #00FFFF;
 }
-header{
-    background: yellow;
-    margin:0;
-    padding:0;
+header {
+    background: #E9967A;
+    margin: 0;
+    padding: 0;
 }
 section{
     background:skyblue;
 }
-footer{
-    background:green;
+footer {
+    background: #DA70D6;
 }
