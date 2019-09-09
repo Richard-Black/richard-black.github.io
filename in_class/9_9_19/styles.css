@@ -1,0 +1,15 @@
+﻿body {
+    background:pink;
+
+}
+header{
+    background: yellow;
+    margin:0;
+    padding:0;
+}
+section{
+    background:skyblue;
+}
+footer{
+    background:green;
+}
