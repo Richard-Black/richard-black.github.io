@@ -1,0 +1,105 @@
+﻿* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(images/ice-cream-bg.gif);
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.twocolumns {
+    background: pink;
+    opacity:.9;
+    justify-content:space-between;
+    /*flex-direction:column;*/
+}
+
+.col1of2 {
+    background: lightpink;
+    opacity: .8;
+    flex-basis: 48%;
+}
+
+.col2of2 {
+    background: purple;
+    opacity: .8;
+    flex-basis: 48%;
+}
+
+.threecolumns {
+    background: red;
+    opacity: .9;
+    /*flex-direction:column;*/
+}
+
+.col1of3 {
+    background: lightpink;
+    opacity: .8;
+    flex: 2;
+    order:1;
+}
+
+.col2of3 {
+    background: lightpink;
+    opacity: .8;
+    flex: 1;
+    order:1;
+}
+
+.col3of3 {
+    background: lightpink;
+    opacity: .8;
+    flex: 1;
+}
+.grid {
+    background: orange;
+    opacity:.8;
+
+}
+
+.col2ofgrid{
+    display:flex;
+    flex-direction:column;
+}
+
+col2row1ofgrid{
+    flex:1;
+}
+
+col2row2ofgrid {
+    flex: 1;
+}
+
+.images {
+    background: white;
+    opacity:.8;
+    justify-content: space-between;
+}
+
+header, section, footer {
+    margin:10px auto;
+    width:70%;
+    padding:5px 10px 5px 10px;
+    border-radius:10px;
+}
+
+header {
+    background:rgba(218,112,231,0.8);
+
+}yyy
+section{
+    background:skyblue;
+}
+footer {
+    background: #DA70D6;
+    opacity:.8;
+}
+
+@media (min-width:900px) {
+    .twocolumns, .threecolumns, .grid, .images, col2ofgrid {
+        display: flex;
+    }
+}
