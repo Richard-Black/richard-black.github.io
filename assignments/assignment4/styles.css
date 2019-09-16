@@ -31,7 +31,6 @@ body {
 .threecolumns {
     background: red;
     opacity: .9;
-    /*flex-direction:column;*/
 }
 
 .col1of3 {
@@ -100,8 +99,8 @@ footer {
     background: #DA70D6;
 }
 
-@media (min-width:600px) {
+@media (min-width:1080px) {
     .twocolumns, .threecolumns, .grid, .eightcolumns, col2ofgrid, .navigation {
-        display:flex;
+        display: flex;
     }
 }
