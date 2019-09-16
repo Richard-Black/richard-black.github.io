@@ -36,21 +36,22 @@ body {
 .col1of3 {
     background: lightpink;
     opacity: .8;
-    flex: 2;
+    flex: 1;
     order:1;
 }
 
 .col2of3 {
     background: lightpink;
     opacity: .8;
-    flex: 1;
-    order:1;
+    flex: 2;
+    order:2;
 }
 
 .col3of3 {
     background: lightpink;
     opacity: .8;
     flex: 1;
+    order:3;
 }
 
 .eightcolumns {
