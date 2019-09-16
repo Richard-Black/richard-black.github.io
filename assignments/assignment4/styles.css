@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url(images/ice-cream-bg.gif);
+    background: url(images/bg.jpg);
     background-size: cover;
     height: 100vh;
     padding: 0;
@@ -14,7 +14,6 @@ body {
     background: pink;
     opacity:.9;
     justify-content:space-between;
-    /*flex-direction:column;*/
 }
 
 .col1of2 {
@@ -61,7 +60,11 @@ body {
     justify-content: space-between;
 }
 
-header, section, footer, nav {
+.navigation {
+    justify-content: space-between;
+}
+
+header, section, footer, article, aside, nav {
     margin:10px auto;
     width:70%;
     padding:5px 10px 5px 10px;
@@ -77,20 +80,28 @@ nav a:hover {
 }
 
 header {
-    background:rgba(218,112,231,0.8);
-
+    background: rgba(218,112,231,0.8);
+    opacity: .8;
 }
 
 section{
     background:skyblue;
 }
-footer {
-    background: #DA70D6;
-    opacity:.8;
+
+article {
+    background: rgba(71, 39, 115,0.8);
 }
 
-@media screen and (max-width: 600px) {
-    .twocolumns, .threecolumns, .grid, .eightcolumns, col2ofgrid {
-        display: flex;
+aside {
+    background: rgba(62, 129, 48,0.8);
+}
+
+footer {
+    background: #DA70D6;
+}
+
+@media (min-width:600px) {
+    .twocolumns, .threecolumns, .grid, .eightcolumns, col2ofgrid, .navigation {
+        display:flex;
     }
 }
