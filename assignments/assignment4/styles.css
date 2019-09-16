@@ -11,47 +11,47 @@ body {
     margin: 0;
 }
 .twocolumns {
-    background: pink;
-    opacity:.9;
-    justify-content:space-between;
+    background: #A63F03;
+    opacity: .9;
+    justify-content: space-between;
 }
 
 .col1of2 {
-    background: lightpink;
+    background: #F2A391;
     opacity: .8;
     flex-basis: 48%;
 }
 
 .col2of2 {
-    background: purple;
+    background: #F2A391;
     opacity: .8;
     flex-basis: 48%;
 }
 
 .threecolumns {
-    background: red;
+    background: #F2BC8D;
     opacity: .9;
 }
 
 .col1of3 {
-    background: lightpink;
+    background: #659AA6;
     opacity: .8;
     flex: 1;
-    order:1;
+    order: 1;
 }
 
 .col2of3 {
-    background: lightpink;
+    background: #659AA6;
     opacity: .8;
     flex: 2;
-    order:2;
+    order: 2;
 }
 
 .col3of3 {
-    background: lightpink;
+    background: #659AA6;
     opacity: .8;
     flex: 1;
-    order:3;
+    order: 3;
 }
 
 .eightcolumns {
@@ -72,7 +72,7 @@ header, section, footer, article, aside, nav {
 }
 nav {
     font-color: black;
-    background:purple;
+    background: #F28729;
     opacity: .8;
 }
 
@@ -81,7 +81,7 @@ nav a:hover {
 }
 
 header {
-    background: rgba(218,112,231,0.8);
+    background: #659AA6;
     opacity: .8;
 }
 
