@@ -99,8 +99,9 @@ footer {
     background: #DA70D6;
 }
 
-@media (min-width:1080px) {
+@media (min-width: 600px) {
     .twocolumns, .threecolumns, .grid, .eightcolumns, col2ofgrid, .navigation {
         display: flex;
+        position: relative;
     }
 }
