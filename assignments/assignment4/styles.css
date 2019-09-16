@@ -70,12 +70,13 @@ header, section, footer, article, aside, nav {
     border-radius:10px;
 }
 nav {
+    font-color: black;
     background:purple;
     opacity: .8;
 }
 
 nav a:hover {
-    background: red;
+    background: white;
 }
 
 header {
@@ -105,3 +106,9 @@ footer {
         position: relative;
     }
 }
+
+@media (min-width: 600px) {
+    .navigation {
+        display: verical;
+        position: relative;
+    }
