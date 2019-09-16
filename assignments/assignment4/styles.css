@@ -105,11 +105,16 @@ footer {
     .twocolumns, .threecolumns, .grid, .eightcolumns, col2ofgrid, .navigation {
         display: flex;
         position: relative;
+        float: none;
     }
 }
 
-@media (min-width: 600px) {
-    .navigation {
-        display: verical;
-        position: relative;
+@media all (max-width: 500px) {
+    .navigation ul {
+        flex-direction: column;
     }
+
+        .navigation ul li {
+            text-align: center;
+        }
+}
