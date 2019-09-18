@@ -5,7 +5,7 @@ myP1.innerHTML = `${userName} ordered`;
 var order = prompt("How many coffees would you like to order?");
 var myP2 = document.getElementById("order");
 if (order > 1) {
-    myP2.innerHTML = ` ${order} coffee(s),`;
+    myP2.innerHTML = ` ${order} coffees,`;
 }
 else {
     myP2.innerHTML = ` ${order} coffee,`;
