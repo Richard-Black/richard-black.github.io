@@ -1,0 +1,22 @@
+﻿body {
+   lighting-col
+}
+
+ul {
+    list-style-type: bullet;
+}
+.col1of3 {
+    background: skyblue;
+    padding: 10px;
+    flex-basis:30%;
+}
+
+.result-row
+
+@media (min-wdith:900px){
+    .threecols {
+        display:flex;
+        justify-content:space-between;
+    }
+
+}
