@@ -1,10 +1,10 @@
 ﻿* {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    background: url(images/coffee-bg.gif);
 }
 
 body {
-    background: url(images/coffee-bg.gif);
     background-size: cover;
     height: 100vh;
     padding: 0;
