@@ -11,7 +11,7 @@ body {
     margin: 0;
 }
 
-.summary {
+#summary {
     font-weight: bold;
 }
 
