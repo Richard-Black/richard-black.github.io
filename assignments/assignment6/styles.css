@@ -1,0 +1,107 @@
+﻿* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(images/beachball-bg.gif);
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.summary {
+    font-weight: bold;
+}
+
+.navigation {
+    justify-content: space-between;
+}
+
+ nav, footer, aside, article {
+    margin: 50px auto;
+    width: 70%;
+    padding: 5px 15px 5px 10px;
+    border-radius: 10px;
+}
+
+section {
+    margin: 10px auto;
+    width: 70%;
+    padding: 5px 15px 200px 10px;
+    border-radius: 10px;
+}
+
+
+h1{
+    text-align:center;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+h3{
+    text-align:center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.bg{
+    text-align:center;
+}
+
+
+nav {
+    background: #F28729;
+    opacity: .8;
+}
+
+    nav a:hover {
+        background: white;
+    }
+    
+
+.about {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.imageList {
+   text-align:center;
+}
+
+section {
+    background: skyblue;
+}
+
+article {
+    background: rgba(71, 39, 115,0.8);
+}
+footer {
+    background: #DA70D6;
+}
+
+
+@media (min-width: 600px) {
+     .navigation {
+        display: flex;
+        position: relative;
+        float: none;
+    }
+}
+
+@media all (max-width: 500px) {
+    .navigation ul {
+        flex-direction: column;
+    }
+        .navigation ul li {
+            text-align: center;
+        }
+}

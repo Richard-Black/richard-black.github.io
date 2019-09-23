@@ -5,19 +5,39 @@
 ul {
     list-style-type: bullet;
 }
-.col1of3 {
+
+.fruit-col {
     background: skyblue;
     padding: 10px;
-    display:flex;
-    margin:auto;
+    flex-basis: 30%;
+    margin: 10px;
 }
 
-.result-row
+.col1of3 {
+    background: lightcoral;
+}
 
-@media (min-wdith:900px){
+.col2of3 {
+    background: lightgreen;
+}
+
+.col3of3 {
+    background: lightsalmon;
+}
+
+.result-row {
+    background: lightseagreen;
+    padding: 10px;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media (min-width:900px) {
     .threecols {
-        display:flex;
-        justify-content:space-between;
+        display: flex;
+        justify-content: space-between;
     }
-
 }
