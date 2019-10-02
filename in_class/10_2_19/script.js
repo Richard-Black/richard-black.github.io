@@ -43,8 +43,8 @@ function displayLinks() {
 function displayTimesTables() {
     //insert table after button
     let tableElem = document.createElement("table");
-    tableElem.classList(table);
-    tableElem.id = "table";
+    //tableElem.classList(table); Add an element so it can be edited on CSS
+    //tableElem.id = "table";
     this.after(tableElem);  //puts after element
 
     //loop through and create rows
@@ -62,8 +62,7 @@ function displayTimesTables() {
 
     }
 
-
-}
+ }
 
 window.onload = function () {
     this.displayCountLoop();
