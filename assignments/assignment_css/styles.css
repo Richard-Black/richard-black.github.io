@@ -73,16 +73,30 @@
 /*Footer*/
 
 footer {
+color:white;
 display:flex;
 background:#73000A;
 }
 
 #directory-footer {
-   display:flex;
+    display: flex;
+    justify-content:space-between;
+}
+
+#footer-list {
+background:black;
+}
+
+.footer-list{
+    display:flex;
+    justify-content:space-around;
+    list-style-type:none;
+    tab-size:inherit;
+
 }
 
 .col3of6 {
-display:flex;
+    display: flex;
 }
 
 .col2of6 {
@@ -90,23 +104,27 @@ display:flex;
 }
 
 .col1of6 {
-display:flex
+display:flex;
 }
 
-.college-nav1 {
+/* Banner */
+#banner {
+    display: flex;
+    justify-content: center;
 }
 
-.college-nav2 {
+/*Font Styles*/
+
+h3 {
+    color: #73000A;
+    font-size: 20px;
 }
 
-.college-nav3 {
+h2{
+    color:#73000A;
+    font-size:35px;
 }
 
-.offices-nav1 {
-}
-
-.offices-nav2 {
-}
 
 #hamburger div {
     width: 35px;
@@ -123,38 +141,6 @@ display:flex
     visibility: hidden;
 }
 
-
-
-/* Banner */
-
-#banner {
-    display:flex;
-    justify-content: center;
-}
-
-/*Font Styles*/
-
-h3 {
-    color: #73000A;
-    font-size: 20px;
-}
-
-h2{
-    color:#73000A;
-    font-size:35px;
-}
-
-#main-nav.hidden {
-    display: none;
-}
-
-#hamburger {
-    display: none;
-}
-
-.hidden {
-    visibility: hidden;
-}
 
 @media (min-width:900px){
     #main-nav ul {
@@ -187,4 +173,8 @@ h2{
     #hamburger {
         display: block;
     }
+}
+
+#main-nav.hidden {
+    display: none;
 }
