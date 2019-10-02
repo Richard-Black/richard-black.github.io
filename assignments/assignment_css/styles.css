@@ -54,12 +54,76 @@
 
 .sc-article {
     margin: 20px;
-    border-botto
+    border-bottom;
 }
 
 .sc-article img {
     margin-right:20px;
 }
+
+.sc-side {
+
+    border-left: thick;
+    border: solid;
+    margin: 20px;
+    border-color: lightgray;
+    border-left-color: #73000A;
+}
+
+/*Footer*/
+
+footer {
+display:flex;
+background:#73000A;
+}
+
+#directory-footer {
+   display:flex;
+}
+
+.col3of6 {
+display:flex;
+}
+
+.col2of6 {
+display:flex;
+}
+
+.col1of6 {
+display:flex
+}
+
+.college-nav1 {
+}
+
+.college-nav2 {
+}
+
+.college-nav3 {
+}
+
+.offices-nav1 {
+}
+
+.offices-nav2 {
+}
+
+#hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#hamburger {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
 
 /* Banner */
 
@@ -70,9 +134,26 @@
 
 /*Font Styles*/
 
+h3 {
+    color: #73000A;
+    font-size: 20px;
+}
+
 h2{
     color:#73000A;
     font-size:35px;
+}
+
+#main-nav.hidden {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 @media (min-width:900px){
@@ -92,4 +173,18 @@ h2{
         justify-content:space-between;
     }
 
+}
+
+@media all and (max-width:500px) {
+    #main-nav ul {
+        flex-direction: column;
+    }
+
+        #main-nav ul li {
+            text-align: center;
+        }
+
+    #hamburger {
+        display: block;
+    }
 }
