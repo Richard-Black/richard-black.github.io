@@ -106,7 +106,26 @@ display:flex;
 .col1of6 {
 display:flex;
 }
-
+.colleges1 li {
+    color:white;
+    list-style-type: none;
+}
+.colleges2 {
+    list-style-type: none;
+}
+.colleges3 {
+    list-style-type: none;
+}
+.offices1 {
+    list-style-type: none;
+}
+.offices2 {
+    list-style-type: none;
+}
+.tools {
+    color: white;
+    list-style-type: none;
+}
 /* Banner */
 #banner {
     display: flex;
@@ -130,7 +149,7 @@ h2{
     width: 35px;
     height: 5px;
     background-color: black;
-    margin: 6px 0;
+    margin: 10px;
 }
 
 #hamburger {
