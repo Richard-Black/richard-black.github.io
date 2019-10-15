@@ -17,10 +17,18 @@ function findAscii() {
     let result1 = document.getElementById("result1");
     var totalAscii =""; 
     for ( i = 0; i < word.length; i++) {
+        totalAscii += word.charCodeAt(i);
+        if(i!= word.length -1){
+            totalAscii += `, `;
+        }
+        
+
+    }
+    /*for ( i = 0; i < word.length; i++) {
         totalAscii += word.charCodeAt(i) + `, `;
 
     }
-            totalAscii = totalAscii.replace(/,\s*$/, "");
+            totalAscii = totalAscii.replace(/,\s*$/, "");*/
 
             result1.innerHTML = `${totalAscii}`;
 
