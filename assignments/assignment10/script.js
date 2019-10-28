@@ -15,8 +15,64 @@ setInterval (function quotes(){
 quote.innerHTML = quoteArray[index++ % quoteArray.length];
     
 },2000);
+/*
+if (index > quoateArray.length) - 1 index = 0;
 
+let quote = document.getElementById("quote");
+quote.innerHTML = quoteArray[index];
+index++;
+*/
 
+/* 
+function compareLottoNumbers(){
+    let userLottoNum = getUserNumbers();
+    let officialLottoNum = generateLottoNumber();
+    let match = true;
+    let feedbackElems = document.getElementsByClassName("feedback");
+    let resultElem = document.getElementsByID "result"
+
+    this.after(resultElem);
+
+    for (let i = 0; i < userLottoNum.length;i++){
+        if(userLottoNum[i] == officialLottoNum[i])
+        feedbackElems[i].textConent = "match"
+        else
+        feedbackElems[i].textContent = "not a match"
+        match = false;
+    }
+
+    if(match){
+        resultElem.textContent = WINNER
+    }
+    else 
+    resultElem.textContent = LOSER
+    }
+}
+
+function generateLottoNumber(){
+    let lottoNumbers = [];
+    let comNumElem = document.getElementbyId("com-num")
+    compNumElem.textContent = " ";
+
+    for(let i =0; i < 5; i++)
+    lottoNumbers[i] = math.floor((Match.random()*10)+1);
+    compNumElem.textContent += lottoNumbers[i]
+
+    return lottoNumbers
+
+}
+
+function getUserNumbers(){
+    let lottoInputs = documents.getElementsByClassName("lotto")
+    let lottoNumbers = [];
+
+    for(let lottoInput of lottoInputs){
+        lottoNumbers.push(lottoInput.value) //pushes item
+    }
+
+    return lottoNumbers;
+}
+*/
 
 function lotto(){
     const entryNums = document.getElementsByClassName("lotto");
