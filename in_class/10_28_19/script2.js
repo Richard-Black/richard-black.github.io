@@ -32,6 +32,6 @@ window.onload = function(){
     let content = document.getElementById("content");
     let h1 = document.createElement("h1");
     h1.innerHTML = 'I love shoes';
-    content.append(h1)
+    content.append(h1);
     //console.log("2");
 }
