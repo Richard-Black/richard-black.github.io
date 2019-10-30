@@ -4,20 +4,20 @@
     "brand":"merrell",
     "price":"34.52",
     "rating":"5",
-    "comments":["Best shoe ever","I love your shoe", "X-MEN!"]
+    "reviews":["Best shoe ever","I love your shoe", "X-MEN!"]
     },
     {
         "name":"travis scott x jordan 6",
     "brand":"jordan brand",
     "price":"200",
     "rating":"5",
-    "comments":["Great collab", "love jordan 6s"]
+    "reviews":["Great collab", "love jordan 6s"]
     },
     {
         "name":"Jordan 1 SBB 3.0",
     "brand":"jordan brand",
     "price":"170",
     "rating":"5",
-    "comments":["Nice retro", "love the leather on this model"]
+    "reviews":["Nice retro", "love the leather on this model"]
     }
 ]
