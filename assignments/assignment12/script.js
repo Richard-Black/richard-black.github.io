@@ -1,49 +1,81 @@
 ﻿"using strict"
 
-class Books {
-    constructor(title, author, genre, year){
-        this._title = title;
-        this._author = author;
-        this._genre = genre;
-        this._year = year;
-    }
+async function displayMovies(){
+    let response = await fetch("https://portiaportia.github.io/csce242/json/movies.json");
+    let movieJSON = await response.json();
+    let contentDiv = document.getElementById("content");
 
-    getTitle(){
-        return this._title;
-    }
 
-    getAuthor(){
-        return this._author;
-    }
-
-    getGenre(){
-        return this._genre;
-    }
-
-    getYear(){
-        return this._year
+    for(i in movieJSON){
+        let movie = movieJSON[i];
+        contentDiv.append(getMovieData(movie));
+        //contentDiv.append(movieBulletList());
     }
 }
 
-books = [];
-books.push(new Books("The Great Gatsby","F. Scott Fitzgerald","Tragedy","1925"));
-books.push(new Books("The Island of Doctor Moreau","H. G. Wells","Science fiction","1896"));
-books.push(new Books("The Picture of Dorian Gray","Oscar Wilde","Philosophical fiction","1890"));
-books.push(new Books("The Count of Monte Cristo","Alexandre Dumas","Historical novel, Adventure","1844–1846"));
-books.push(new Books("The 48 Laws of Power","Robert Greene","Self-help","1998"));
+function getMovieData(movie){
 
-for(let book of books){
-    let imagesDiv = document.getElementById("bookImage");
-    img = document.createElement("img");
-    img.src = "images/"+book.getTitle()+".jpeg";
-    book = book.getTitle().bold()+" by "+book.getAuthor()+", genre: "+book.getGenre()+", written in "+book.getYear();
-    let contentDiv = document.getElementById("bookContent");
-    let pElem = document.createElement("p");
-    contentDiv.append(pElem);
-    pElem.append(book);
-    pElem.innerHTML = book;
-    imagesDiv.append(img);
+
+
+    let movieSection = document.createElement("div");
+    movieSection.className = "movie";
+    let movieTitle = document.createElement("h4");
+
+    let movieImg = document.createElement("div");
+    movieImg.className ="movieImg";
+    movieImgSrc = document.createElement("img");
+    movieImgSrc.src = "https://portiaportia.github.io/csce242/json/"+movie.img;
+    movieImg.append(movieImgSrc);
+    movieSection.append(movieImg);
+
+    let movieInfo = document.createElement("div");
+    movieInfo.className ="movieInfo";
+    movieTitle.innerHTML = movie.title;
+    movieInfo.append(movieTitle);
+    movieInfo.append(movieBulletList(movie.director,movie.actors,movie.year,movie.genres));
+    movieInfo.append(createShoePara(movie.description));
+    movieSection.append(movieInfo);
+
+    return movieSection;
+    
 }
 
+function movieBulletList(director, actors, year, genres){
+    let ulElem = document.createElement("ul");
+    let liElemDir = document.createElement("li");
+    let liElemAct = document.createElement("li");
+    let liElemYr = document.createElement("li");
+    let liElemGnr = document.createElement("li");
 
 
+    for(i in director){
+        liElemDir.innerHTML = director;
+        ulElem.append(liElemDir);
+    }
+
+    for(i in actors){
+        liElemAct.innerHTML = actors+" ";
+        ulElem.append(liElemAct);
+    }
+
+    for(i in year){
+        liElemYr.innerHTML = year;
+        ulElem.append(liElemYr);
+    }
+
+    for(i in genres){
+        liElemGnr.innerHTML = genres;
+        ulElem.append(liElemGnr);
+    }
+    return ulElem;
+}
+
+function createShoePara(description){
+    let movieDescrition = document.createElement("p");
+    movieDescrition.innerHTML = description;
+    return movieDescrition;
+}
+
+window.onload = function(){
+    this.displayMovies();
+}

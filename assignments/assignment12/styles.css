@@ -30,22 +30,18 @@ section {
     background: skyblue;
 }
 
-#books{
-    display: flex;
-    flex-direction: row;;
+.movie{
+    
+    margin: 10px auto;
+    width: 100%;
+    padding: 5px 15px 5px 10px;
+    border-radius: 10px;
+    background: #DA70D6; 
+    display:flex;
 }
 
-#bookImage{
-    width: 50%;
-}
+.movieImg{padding: 30px;}
 
-.jpeg{
-    height: 10px;
-    width: auto;
-} 
-
-#bookContent{
-}
 
 h1{
     text-align:center;
@@ -59,9 +55,6 @@ h3{
     text-align:center;
 }
 
-h4 {
-    text-align: center;
-}
 
 
 nav {
@@ -80,6 +73,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     width: 33%;
+    align-content: center;
 }
 
 .imageList{
@@ -88,6 +82,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    align-content: center;
 }
 
 .about {

@@ -2,12 +2,12 @@
 
 async function displayShoe(){ //async allows us to do multiple things at the same time
     //console.log("3");
-    let respone = await fetch("https://richard-black.github.io/in_class/10_28_19/shoe.json"); //await = wait before this happens before proceeding
+    let response = await fetch("https://richard-black.github.io/in_class/10_28_19/shoe.json"); //await = wait before this happens before proceeding
     //console.log(respone);
     //console.log("4");
     //console.log(respone);
     //console.log("5");
-    let shoeJSON = await respone.json();
+    let shoeJSON = await response.json();
     let shoeName = shoeJSON.name;
     let shoeBrand = shoeJSON.brand;
     let comments = shoeJSON.comments;
