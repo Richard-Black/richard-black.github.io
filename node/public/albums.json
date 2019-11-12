@@ -1,0 +1,61 @@
+[    {
+        "id":"1",
+        "title":"Illmatic",
+        "artist":"Nas",
+        "year": "1994",
+        "producers": ["Faith N. (also exec.)", "MC Serch (exec.)", "DJ Premier", "L.E.S.", "Pete Rock", "Large Professor", "Q-Tip"],
+        "label": "Columbia Records",
+        "img": "images/Illmatic.jpg",
+        "description":"Illmatic is the debut studio album by American rapper Nas. It was released on April 19, 1994, by Columbia Records. After signing with the label with the help of MC Serch, Nas recorded the album in 1992 and 1993 at Chung King Studios, D&D Recording, Battery Studios, and Unique Recording Studios in New York City."
+    },
+    {
+        "id":2,
+        "title":"The Chronic",
+        "artist":"Dr. Dre",
+        "year": "1992",
+        "producers": ["Dr. Dre", "Suge Knight (exec.)"],
+        "label": "Interscope Records",
+        "img": "images/The Chronic.jpg",
+        "description": "The Chronic is the debut studio album by American hip hop recording artist Dr. Dre. It was released on December 15, 1992, by his own record label Death Row Records and distributed by Interscope Records."
+    },
+    {
+        "id":3,
+        "title":"Enter the Wu-Tang (36 Chambers)",
+        "artist":"Wu-Tang Clan",
+        "year": "1993",
+        "producers": ["RZA (also exec.)", "Ol' Dirty Bastard", "Method Man"],
+        "label": "RCA Records",
+        "img": "images/Enter the Wu-Tang (36 Chambers).jpg",
+        "description": "Enter the Wu-Tang (36 Chambers) is the debut studio album by American hip hop group Wu-Tang Clan, released on November 9, 1993, by Loud Records. Recording sessions took place during early-to-mid 1993 at Firehouse Studio in New York City, and the album was produced by the group's de facto leader RZA"
+    },
+    {
+        "id":4,
+        "title":"The Score",
+        "artist":"Fugees",
+        "year": "1996",
+        "producers": ["Prakazrel "Pras" (also exec.)", "Wyclef (also co-exec.)", "Lauryn Hill (also co-exec.)", "Jerry "Te Bass" Duplessis ", "Diamond D", "John Forté", "Shawn King", "Warren Riker", "Salaam Remi"],
+        "label": "Columbia Records",
+        "img": "images/The Score.jpg",
+        "description": "The Score is the second and final studio album by the hip hop trio Fugees, released worldwide February 13, 1996 on Columbia Records. The album features a wide range of samples and instrumentation, with many aspects of alternative hip hop that would come to dominate the hip hop music scene in the mid-late 1990s."
+    },
+    {
+        "id":5,
+        "title":"Black on Both Sides",
+        "artist":"Mos Def",
+        "year": "1999",
+        "producers": ["Mos Def", "Diamond D", "GE-OLOGY", "88-Keys", "DJ Premier", "Ayatollah", "D Prosper", "Ali Shaheed Muhammad", "Psycho Les"],
+        "label":"Rawkus Records" ,
+        "img": "images/Black on Both Sides.jpg",
+        "description":"Black on Both Sides is the debut studio album by American rapper Mos Def, released on October 12, 1999 by Rawkus and Priority Records."
+    },
+    {
+        "id":6,
+        "title ":"The Infamous",
+        "artist":"Mobb Deep",
+        "year": "1995",
+        "producers": ["Mobb Deep (also exec.)", "Matt Life (exec.)", "Schott Free (exec.)The Abstract"],
+        "label": "Loud Records",
+        "img": "images/The Infamous.jpg",
+        "description":"The Infamous is the second studio album by the American hip hop duo Mobb Deep. It was released on April 25, 1995, by Loud Records. The album features guest appearances by Nas, Raekwon, Ghostface Killah, and Q-Tip, who also contributed to its production and mixing."
+    }
+]
