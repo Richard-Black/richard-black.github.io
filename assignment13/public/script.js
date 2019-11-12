@@ -1,7 +1,7 @@
 ﻿"using strict"
 
 async function displayAlbums(){
-    let response = await fetch("https://richard-black.github.io/node/assignment13/public/albums.json");
+    let response = await fetch("https://richard-black.github.io/assignment13/public/albums.json");
     let albumJson = await response.json();
     let contentDiv = document.getElementById("content");
 
@@ -23,7 +23,7 @@ function getalbumData(album){
     let albumImg = document.createElement("div");
     albumImg.className ="albumImg";
     albumImgSrc = document.createElement("img");
-    albumImgSrc.src = "https://richard-black.github.io/node/assignment13/public"+album.img;
+    albumImgSrc.src = "https://richard-black.github.io/assignment13/public"+album.img;
     albumImg.append(albumImgSrc);
     albumSection.append(albumImg);
 
