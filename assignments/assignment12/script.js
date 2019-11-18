@@ -9,7 +9,6 @@ async function displayMovies(){
     for(i in movieJSON){
         let movie = movieJSON[i];
         contentDiv.append(getMovieData(movie));
-        //contentDiv.append(movieBulletList());
     }
 }
 
