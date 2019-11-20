@@ -1,0 +1,23 @@
+body {
+    background:lightskyblue;
+}
+
+#cars {
+    width:80%;
+    margin:auto;
+}
+
+.car {
+    padding:10px;
+    margin:10px;
+    background:orange;
+    border:3px solid white;
+}
+
+.car-form {
+    width:40%;
+    background:lightcoral;
+    border:3px solid white;
+    padding:10px;
+    margin:10px auto;
+}

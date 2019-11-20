@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Assignment 16</h1>
+        <div id="cars"></div>
+
+        <div class="car-form">
+            <h3>Show A Car:</h3>
+            <p>
+                <label for="car-id">Car Id:</label>
+                <input id="txt-car-id">
+            </p>
+            <button id="btn-show-car">Show car</button>
+            <div id="car"></div>
+        </div>
+
+        <div class="car-form">
+            <h3>Create a Car</h3>
+            <p>
+                <label for="txt-new-car-make">Car Make:</label>
+                <input id="txt-new-car-make">
+            </p>
+            <p>
+                <label for="new-car-model">Model:</label>
+                <input id="txt-new-car-model">
+            </p>
+            <p>
+                <label for="txt-new-car-year">Year:</label>
+                <input id="txt-new-car-year">
+            </p>
+            <button id="btn-add-car">Add Car</button>
+        </div>
+
+        <div id="edit-car-form" class="car-form">
+            <h3>Edit a car</h3>
+            <p>
+                car Id:<span id="edit-car-id"></span>
+            </p>
+            <p>
+                <label for="txt-new-car-make">Car Make:</label>
+                <input id="txt-edit-car-make">
+            </p>
+            <p>
+                <label for="new-car-model">Model:</label>
+                <input id="txt-edit-car-model">
+            </p>
+            <p>
+                <label for="txt-new-car-year">Year:</label>
+                <input id="txt-edit-car-year">
+            </p>
+            <button id="btn-edit-car">Edit Car</button>
+        </div>
+    </body>
+</html>
