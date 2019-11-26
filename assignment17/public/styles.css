@@ -1,6 +1,6 @@
 body {
     font-family:Arial;
-    background:skyblue;
+    background:purple;
 }
 
 .car-list{
@@ -8,7 +8,7 @@ body {
     width: 70%;
     padding: 5px 15px 5px 10px;
     border-radius: 10px;
-    background: white;
+    background: grey;
 }
 .header{
     text-align: center;
@@ -20,7 +20,7 @@ body {
     width: 70%;
     padding: 5px 15px 5px 10px;
     border-radius: 10px;
-    background: white;
+    background: grey;
 }
 
 #btn-create-car{

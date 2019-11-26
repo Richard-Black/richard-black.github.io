@@ -45,17 +45,18 @@ createRecipe(chocCookie);*/
 
 function validateCars(cars){
     const schema = {
-        title:Joi.string().min(3).required(),
-        author:Joi.string(),
-        rating:Joi.number(),
-        ingredients:Joi.allow(),
-        directions:Joi.allow()
+        id:Joi.string().min(3).required(),
+        make:Joi.string(),
+        model:Joi.number(),
+        color:Joi.allow(),
+        layout:Joi.allow(),
+        productionYear:Joi.allow()
     };
 
     return Joi.validate(cars, schema);
 }
 
-app.post('/api/carss',(req,res)=>{
+app.post('/api/cars',(req,res)=>{
     const result = validateCars(req.body);
 
     if(result.error){
@@ -64,11 +65,12 @@ app.post('/api/carss',(req,res)=>{
     }
 
     const car = new Car({
-        title:req.body.title,
-        author:req.body.author,
-        rating:Number(req.body.rating),
-        ingredients:req.body.ingredients,
-        directions:req.body.directions
+        id:Number(req.body.id),
+        make:req.body.make,
+        model:req.body.model,
+        color:req.body.color,
+        layout:req.body.layout,
+        productionYear:req.body.productionYear
     });
 
     createCar(car);

@@ -30,7 +30,6 @@ function getCarElem(car){
     let carP = document.createElement("p");
     carP.innerHTML = `by ${car.make}, "Production Years: ${car.pYears}`;
 
-    //create edit and delete links
     let editButton = document.createElement("button");
     editButton.innerHTML = "Edit";
     editButton.setAttribute("data-id", car.id);
@@ -49,10 +48,13 @@ function getCarElem(car){
     return carDiv;
 }
 
-
-async function addCar(){
+async function showAddCar(){
     let addCarP = document.getElementById("add-car-form");
     addCarP.classList.remove("hidden");
+}
+
+async function addCar(){
+    let id = document.getElementById("txt-add-car-id").value;
     const make = document.getElementById("txt-add-car-make").value;
     const model = document.getElementById("txt-add-car-model").value;
     const color = document.getElementById("txt-add-car-color").value;
@@ -61,11 +63,9 @@ async function addCar(){
     const layout = layoutText.split("\n");
     const pYears = pYearsText.split("\n");
     const feedbackP = document.getElementById("feedback");
-    feedbackP.classList.remove("error");
-    feedbackP.classList.remove("success");
-    feedbackP.classList.remove("hidden");
 
-    let car = {"make": make, "model": model, "color": color, "layout": layout, "production years":pYears};
+
+    let car = {"id":id,"make": make, "model": model, "color": color, "layout": layout, "production years":pYears};
     console.log(car);
 
     let response = await fetch('/api/cars/', {
@@ -79,12 +79,17 @@ async function addCar(){
     if(response.status != 200){
         feedbackP.innerHTML = "Error Adding Car";
         feedbackP.classList.add("error");
+        feedbackP.classList.remove("hidden");
         return;
     }
 
     let result = await response.json();
     feedbackP.innerHTML = "Successfully Added Car";
     feedbackP.classList.add("success");
+    feedbackP.classList.remove("hidden");
+
+    showCar()
+
 }
 
 async function editCar(){
@@ -107,7 +112,6 @@ async function editCar(){
         console.log("Error edditing car");
     }
 
-    //update the car list
     showCars();
 }
 
@@ -137,7 +141,7 @@ async function deleteCar(){
     });
 
     if(response.status != 200){
-        console.log("Error adding car");
+        console.log("Error deleting car");
         return;
     }
 
@@ -146,6 +150,6 @@ async function deleteCar(){
 }
 
 window.onload = function(){
-    this.document.getElementById("btn-create-car").onclick = addCar;
-
+    this.document.getElementById("btn-create-car").onclick = showAddCar;
+    this.document.getElementById("btn-add-car").onclick = addCar;
 }
