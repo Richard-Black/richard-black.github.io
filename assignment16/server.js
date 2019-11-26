@@ -5,12 +5,12 @@ app.use(express.json());
 app.use(express.static('public'));
 
 const cars = [
-    {id: "1" ,make: "Ford",model: "Thunderbird",year: "2005"},
-    {id: "2" ,make: "Porsche",model: "9111",year: "1997"},
-    {id: "3" ,make: "Ford",model: "Mustang - Shelby",year: "2001"},
-    {id: "4" ,make: "Honda",model: "Civic - Type R",year: "2000"},
-    {id: "5" ,make: "Ford",model: "Crown Victoria",year: "2007"},
-    {id: "6" ,make: "BMW",model: "M1",year: "1981"},
+    {id: 1 ,make: "Ford",model: "Thunderbird",year: "2005", drive: "rwd", productionYear:["1955-1997","2002-2005"]},
+    {id: 2 ,make: "Porsche",model: "911",year: "1997"},
+    {id: 3 ,make: "Ford",model: "Mustang - Shelby",year: "2001"},
+    {id: 4 ,make: "Honda",model: "Civic - Type R",year: "2000"},
+    {id: 5 ,make: "Ford",model: "Crown Victoria",year: "2007"},
+    {id: 6 ,make: "BMW",model: "M1",year: "1981"},
 ]
 
 app.get('/api/cars', (req,res)=>{

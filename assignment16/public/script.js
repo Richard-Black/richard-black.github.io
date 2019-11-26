@@ -22,10 +22,10 @@ function getCarElem(car){
     let carDiv = document.createElement("div");
     carDiv.classList.add("car");
     let carTitle = document.createElement("h3");
-    carTitle.innerHTML = car.id + ": " + car.make;
+    carTitle.innerHTML = car.id + ": " + car.model;
 
     let carP = document.createElement("p");
-    carP.innerHTML = `by ${car.model}, year ${car.year}`;
+    carP.innerHTML = `by ${car.make}, ${car.year}`;
 
     //create edit and delete links
     let editButton = document.createElement("button");
@@ -73,7 +73,7 @@ async function deleteCar(){
         return;
     }
 
-    showcars();
+    showCar();
     return false;
 }
 
@@ -83,9 +83,9 @@ async function addCar(){
     const carModel = document.getElementById("txt-new-car-model").value;
     const carYear = document.getElementById("txt-new-car-year").value;
 
-    console.log(`you are adding ${carMake}, ${carModel}, ${carYear}`);
+    console.log(`you are adding ${carModel} by ${carMake}, ${carYear}`);
 
-    let car = {"make": carMake, "model":carModel, "year":carYear};
+    let car = {"model": carModel, "model":carMake, "year":carYear};
 
     let response = await fetch('/api/cars/', {
         method: 'POST',
@@ -101,7 +101,7 @@ async function addCar(){
     }
 
     let result = await response.json();
-    showcars();
+    showCars();
 }
 
 async function editCar(){
@@ -124,7 +124,7 @@ async function editCar(){
     }
 
     //update the car list
-    showcars();
+    showCars();
 }
 
 window.onload = function(){

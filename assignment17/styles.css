@@ -1,0 +1,46 @@
+body {
+    font-family:Arial;
+    background:skyblue;
+}
+
+.car-list{
+    margin: auto;
+    width: 70%;
+    padding: 5px 15px 5px 10px;
+    border-radius: 10px;
+    background: white;
+}
+.header{
+    text-align: center;
+
+}
+
+#add-car-form{
+    margin: auto;
+    width: 70%;
+    padding: 5px 15px 5px 10px;
+    border-radius: 10px;
+    background: white;
+}
+
+#btn-create-car{
+    float: right;
+}
+
+#btn-add-car{
+    float: center;
+}
+
+.error {
+    background:lightcoral;
+    color:darkRed;
+}
+
+.success {
+    background:lightgreen;
+    color:darkGreen;
+}
+
+.hidden {
+    display:none;
+}
