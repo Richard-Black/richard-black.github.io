@@ -45,9 +45,9 @@ createRecipe(chocCookie);*/
 
 function validateCars(cars){
     const schema = {
-        id:Joi.string().min(3).required(),
+        id:Joi.allow(),
         make:Joi.string(),
-        model:Joi.number(),
+        model:Joi.allow(),
         color:Joi.allow(),
         layout:Joi.allow(),
         productionYear:Joi.allow()
@@ -128,7 +128,7 @@ app.get('/',(req,res)=>{
 });
 
 app.get('/api/cars',(req,res)=>{
-
+    res.send(cars);
 });
 
 const port = process.env.PORT || 3000;
